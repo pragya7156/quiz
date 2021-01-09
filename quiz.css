@@ -1,0 +1,33 @@
+*{
+    margin-top: 6rem;
+    text-align: center;
+    background-image: linear-gradient(to right,rgb(46, 43, 233),rgb(19, 195, 248));
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+button{
+    padding: 2.5px;
+    text-align: center;
+    margin-top: 2em;
+}
+button:hover{
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    text-decoration: none;
+    color: black;
+}
