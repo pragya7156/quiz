@@ -48,3 +48,7 @@
 input{
     margin: 10px 20px;
 }
+
+.option{
+    background-color: transparent;
+}
