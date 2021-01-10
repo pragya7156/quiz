@@ -1,0 +1,11 @@
+.card{
+    margin: auto;
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+}
+i{
+    color: green;
+    font-size: 80px;
+}
