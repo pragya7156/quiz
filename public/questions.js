@@ -9,7 +9,7 @@ function answer() {
             c++;
             console.log(c);
     if (c !== q.length) {
-        // alert("Please answer all the questions!!");
+        alert("Please answer all the questions!!");
     }
     else {
         for (let i = 0; i < q.length; i++) {
@@ -19,11 +19,22 @@ function answer() {
                 }
             }
         }
-        alert(`Your total score : ${count}`);
+        let s=0;
+        let btn = document.getElementById('Result');
+        btn.style.cssText = 'display: block;';
+        let d = document.getElementById('res');
+        let k="";
+        k += "<li>" + "Your total score : " + count + "</li>";
+            k += "<li>" + "Your Accuracy : " + count*10 + "%</li>";
+        d.addEventListener('click',function(){
+            let res = document.getElementById('hide_res');
+            if(s===0) {
+            res.style.cssText = 'display: block;';
+            res.innerHTML = k;
+            }
+        });
+        
     }
-    var btn = document.getElementById('bton');
-    btn.addEventListener('click', function(){
-        location.href = './end.html';
-    })
+    
 }
 
