@@ -1,4 +1,7 @@
-var e = document.getElementById('btn');
+var e = document.getElementById('st_btn');
+var d = document.getElementById('questions');
+var f = document.getElementById('first');
 e.addEventListener('click', function(){
-    location.href='./questions.html';
+    d.style.cssText = 'display: block;';
+    f.style.cssText = 'display: none;';
 })
