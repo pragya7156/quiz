@@ -1,8 +1,11 @@
-// var cat = document.getElementById('category');
-// var c = cat.value;
-// var lev = document.getElementById('level');
-// var l = lev.value;
-fetch(`https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple`)
+var e = document.getElementById('st_btn');
+
+e.addEventListener('click',()=>{
+    var cat = document.getElementById('category');
+    var c = cat.value;
+    var lev = document.getElementById('level');
+    var l = lev.value;
+fetch(`https://opentdb.com/api.php?amount=10&category=${c}&difficulty=${l}&type=multiple`)
     .then((response) => response.json())
     .then((value) => {
         var ans = [Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1)];
@@ -76,6 +79,7 @@ fetch(`https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
 
 
     });
+});
 
 // var xhr = new XMLHttpRequest();
 // xhr.open('GET','https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple',true);
@@ -88,5 +92,4 @@ fetch(`https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
 //     console.log('file not found');
 // }
 // xhr.send();
-
 
