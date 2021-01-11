@@ -1,13 +1,12 @@
 var count = 0;
 var c = 0;
 function answer() {
-    var ans = [1, 2, 1, 3, 4, 2, 3, 4, 1, 1];
+    var ans = [Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1)];
     let ele = document.getElementsByTagName('input');
     let q = document.getElementsByClassName('head');
     for (let i = 0; i < ele.length; i++)
         if (ele[i].checked === true)
             c++;
-            console.log(c);
     if (c !== q.length) {
         alert("Please answer all the questions!!");
     }
@@ -19,22 +18,22 @@ function answer() {
                 }
             }
         }
-        let s=0;
+        let s = 0;
         let btn = document.getElementById('Result');
         btn.style.cssText = 'display: block;';
         let d = document.getElementById('res');
-        let k="";
+        let k = "";
         k += "<li>" + "Your total score : " + count + "</li>";
-            k += "<li>" + "Your Accuracy : " + count*10 + "%</li>";
-        d.addEventListener('click',function(){
+        k += "<li>" + "Your Accuracy : " + count * 10 + "%</li>";
+        d.addEventListener('click', function () {
             let res = document.getElementById('hide_res');
-            if(s===0) {
-            res.style.cssText = 'display: block;';
-            res.innerHTML = k;
+            if (s === 0) {
+                res.style.cssText = 'display: block;';
+                res.innerHTML = k;
             }
         });
-        
+
     }
-    
+
 }
 
