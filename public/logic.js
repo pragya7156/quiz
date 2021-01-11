@@ -1,7 +1,14 @@
-fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple')
+var cat = document.getElementById('category');
+var c = cat.options[cat.selectedIndex].value;
+var lev = document.getElementById('level');
+var l = lev.options[lev.selectedIndex].value;
+fetch(`https://opentdb.com/api.php?amount=10&category=${c}&difficulty=${l}&type=multiple`)
     .then((response) => response.json())
     .then((value) => {
-        var ans = [1, 2, 1, 3, 4, 2, 3, 4, 1, 1];
+        // var ans = [Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1)];
+        var globalVariable = {
+            ans = [Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1)]
+        };
         var que = document.getElementsByClassName('head');
         var opt = document.getElementsByClassName('option');
 
@@ -12,7 +19,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
                 if (j - (i * 4) + 1 !== ans[i]) {
                     opt[j].innerHTML = value.results[i].incorrect_answers[k];
                     k++;
-                }
+                }  
                 else {
                     opt[j].innerHTML = value.results[i].correct_answer;
                 }

@@ -1,8 +1,8 @@
 var count = 0;
 var c = 0;
 function answer() {
-    var ans = [Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1), Math.floor(Math.random() * 4 + 1)];
     let ele = document.getElementsByTagName('input');
+    var ans = globalVariable.ans;
     let q = document.getElementsByClassName('head');
     for (let i = 0; i < ele.length; i++)
         if (ele[i].checked === true)
