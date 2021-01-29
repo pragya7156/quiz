@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/pragya7156/quiz#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-validator": "^6.9.2",
     "firebase": "^8.2.3",
     "firebase-admin": "^9.4.2"
   }
