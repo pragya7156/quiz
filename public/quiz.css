@@ -93,6 +93,28 @@ i{
     color: green;
     font-size: 80px;
 }
-#Result, #hide_res, #hid_ques{
+#Result, #hide_res, #hid_ques, #authseen{
     display: none;
+}
+
+.auth{
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 black;
+    width: 70%;
+}
+
+#logout{
+    text-align: right;
+}
+
+.col-right{
+    text-align: right;
+}
+
+.row{
+    margin-top: 0;
+    margin-bottom: 35px;
 }
