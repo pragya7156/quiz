@@ -1,4 +1,3 @@
-
 var logout = document.getElementById('logout');
 logout.addEventListener('click', function(){
     auth.signOut()
@@ -6,6 +5,7 @@ logout.addEventListener('click', function(){
     // Signed out
     // ...
     //console.log(user);
+    alert('Successfully logged out!!')
       var d = document.getElementById('questions');
       var a = document.getElementById('authseen');
       var f = document.getElementById('first');
