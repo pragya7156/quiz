@@ -1,2 +1,2 @@
 # quiz
-my first quiz project
+A basic quiz application made with bootstrap and firebase. 
