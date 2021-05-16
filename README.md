@@ -1,2 +1,2 @@
 # quiz
-A basic quiz application made with bootstrap and firebase. 
+A basic quiz application made with bootstrap, JavaScript and firebase. 
